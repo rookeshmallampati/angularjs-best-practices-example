@@ -34,7 +34,7 @@ jobs:
         aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws configure set region ${{ secrets.AWS_REGION }}
-        aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
+        aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin 401294341213.dkr.ecr.us-east-1.amazonaws.com
 
     - name: Tag and Push Docker Image
       run: |
