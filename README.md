@@ -46,3 +46,4 @@ npm test
 <!-- real trigger now -->
 
 
+"<!-- deploy trigger -->" 
